@@ -1,0 +1,4 @@
+.container
+  = table_for(@competitors, class: 'table table-striped') do |t|
+    - t.column :name
+    - t.column :votes

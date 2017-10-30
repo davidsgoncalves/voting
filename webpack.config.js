@@ -7,7 +7,7 @@ const vendorPaths = /\/(frontend\/javascripts\/vendor|node_modules)\//;
 
 const config = {
   // the base path which will be used to resolve entry points
-  devtool: 'cheap-module-source-map',
+  devtool: 'eval-source-map',
   context: path.join(__dirname, 'app/frontend/javascripts'),
   entry: {
     app: './application.js',

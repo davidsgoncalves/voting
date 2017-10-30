@@ -1,0 +1,4 @@
+= simple_form_for @voter do |f|
+  = f.input :name, label: 'Nome'
+  = f.input :email, label: 'Email'
+  = f.button :submit, "Salvar", class: 'btn-success'

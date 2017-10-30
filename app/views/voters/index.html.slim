@@ -1,0 +1,9 @@
+.container
+  = table_for(@voters, class: 'table table-striped') do |t|
+    - t.column :name
+    - t.column :email
+    - t.column :competitor_id do |voter|
+      = voter.competitor&.name || ' - '
+    - t.column :actions do |voter|
+      - if voter.competitor&.name
+        = link_to 'Anular Voto', unvote_voter_path(voter.id), class: 'btn btn-danger btn-xs', :method => :delete, :data => {:confirm => "Você tem certeza? "}

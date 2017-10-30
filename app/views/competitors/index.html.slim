@@ -1,0 +1,12 @@
+.container
+  .row
+    - @competitors.each do |competitor|
+      .col-xs-12.col-md-4
+        .card.hovercard
+          = image_tag competitor&.image_url
+          .avatar
+            img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Creative-Tail-Halloween-pumpkin.svg/2000px-Creative-Tail-Halloween-pumpkin.svg.png" /
+          .info
+            .title = competitor.name
+          .bottom
+            = react_component 'VoteModal', user: competitor, url: vote_voters_path, token: form_authenticity_token

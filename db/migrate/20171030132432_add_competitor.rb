@@ -10,7 +10,7 @@ class AddCompetitor < ActiveRecord::Migration[5.0]
     create_table :voters do |t|
       t.string :name
       t.string :email
-      t.references :competitors
+      t.references :competitor
       t.boolean :vote
 
       t.timestamps

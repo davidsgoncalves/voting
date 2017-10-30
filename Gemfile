@@ -11,7 +11,7 @@ gem 'rails', '~> 5.0.5' # Bundle edge Rails instead: gem 'rails', github: 'rails
 gem 'jquery-rails'              # Use jquery as the JavaScript library
 gem 'slim-rails'                # Slim bindings for Rails
 gem 'simple_form'               # forms for rails
-gem 'html_tables'               # table for rails
+gem 'easy_table'               # table for rails
 gem 'will_paginate', '~> 3.1.0' # pagination
 
 gem 'sass-rails', '~> 5.0'      # Use SCSS for stylesheets

@@ -1,0 +1,8 @@
+pt:
+  easy_table:
+    voter: # this is matched based on controller_name.singularize
+      name: 'Nome'
+      email: 'E-mail'
+      competitor_id: 'Votou em'
+    competitor:
+      name: 'Nome'
