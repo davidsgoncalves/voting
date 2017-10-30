@@ -6,20 +6,20 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 development:
   <<: *default
-  database: my_rails_base_development
-  username: database_user
+  database: voting_development
+  username: voting_user
   password: 123456
   host: localhost
   port: 5432
 test:
   <<: *default
-  database: my_rails_base_test
-  username: database_user
+  database: voting_test
+  username: voting_user
   password: 123456
   host: localhost
   port: 5432
 production:
   <<: *default
-  database: my_rails_base_production
-  username: dfc
+  database: voting_production
+  username: voting_user
   password: <%= ENV['DFC_DATABASE_PASSWORD'] %>
